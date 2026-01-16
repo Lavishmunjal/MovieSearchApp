@@ -14,7 +14,7 @@ function App() {
   const fetchMovieData = async () => {
     try {
       setLoading(true)
-      const res = await fetch(`http://www.omdbapi.com/?s=${searcMovie}&apikey=5772cc88`)
+      const res = await fetch(`http://www.omdbapi.com/?s=${searcMovie}&apikey=`)
       const data = await res.json()
       console.log(data.Search)
       setAllMovieData(data.Search)
